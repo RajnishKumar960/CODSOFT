@@ -1,2 +1,2 @@
 # CODSOFT
-The Intershhip
+The Internship
