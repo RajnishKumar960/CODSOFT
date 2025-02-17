@@ -1,0 +1,81 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background: url('your-image-url.jpg') no-repeat center center fixed; /* Adding a background image */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.calculator {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(245, 245, 245, 0.95)); /* Subtle transparent gradient */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+    width: 320px;
+    overflow: hidden;
+    border: 1px solid #e3e3e3;
+}
+
+.display {
+    background-color: #181a1f;
+    color: #d4d4d4;
+    font-size: 2rem;
+    padding: 18px 24px;
+    text-align: right;
+    overflow-x: auto;
+    white-space: nowrap;
+    box-sizing: border-box;
+    border-bottom: 2px solid #333;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background-color: #e0e0e0;
+}
+
+button {
+    background-color: #f4f4f4;
+    border: 0;
+    outline: none;
+    padding: 18px;
+    font-size: 1.1rem;
+    color: #333;
+    transition: all 0.2s ease;
+    border-radius: 4px;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.05);
+}
+
+button:hover {
+    background-color: #e8e8e8;
+    transform: scale(1.02);
+}
+
+button:active {
+    background-color: #ddd;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:nth-child(4n),
+button.equals {
+    background-color: #62c8f9;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:nth-child(4n):hover,
+button.equals:hover {
+    background-color: #4db0e3;
+}
+
+button.equals {
+    grid-column: span 2;
+    font-size: 1.3rem;
+    padding: 20px 0;
+    border: 1px solid transparent;
+}
